@@ -6,6 +6,7 @@ import Nav from "./components/Nav.js";
 import Home from "./components/Home.js";
 import Card from "./components/Card.js";
 import Error from "./components/Error.js";
+import Signup from "./components/Signup.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/card" element={<Card/>} />
         <Route path="*" element={Error} />
+        <Route path="/auth" element={<Signup/>} />
       </Routes>
       {/* <Contact /> */}
       {/* <Firebase /> */}
