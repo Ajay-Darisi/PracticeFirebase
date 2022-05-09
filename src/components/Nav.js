@@ -5,9 +5,10 @@ export class Nav extends Component {
   render() {
     return (
       <div>
-          <li><Link to="">Home</Link></li>
+          <li><Link to="home">Home</Link></li>
           <li><Link to="contact">Contact</Link></li>
-          <li><Link to="auth">Signup</Link></li>
+          <li><Link to="signup">Signup</Link></li>
+          <li><Link to="login">Login</Link></li>
       </div>
     )
   }

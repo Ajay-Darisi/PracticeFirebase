@@ -7,17 +7,19 @@ import Home from "./components/Home.js";
 import Card from "./components/Card.js";
 import Error from "./components/Error.js";
 import Signup from "./components/Signup.js";
+import Login from "./components/Login.js";
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/card" element={<Card/>} />
         <Route path="*" element={Error} />
-        <Route path="/auth" element={<Signup/>} />
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/" element={<Login/>} />
       </Routes>
       {/* <Contact /> */}
       {/* <Firebase /> */}
