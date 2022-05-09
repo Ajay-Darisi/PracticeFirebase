@@ -1,0 +1,33 @@
+.Post {
+    /* all: unset; */
+    border-style: none;
+    text-align: center;
+    background-color: black;
+    width: 70px;
+    height: 30px;
+  }
+
+  .cards {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap:wrap;
+}
+
+.card {
+    min-width: 15%;
+    height: 15%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+    background-color: #39b846 ;
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  p {
+    text-decoration: none;
+    /* color: white; */
+  }

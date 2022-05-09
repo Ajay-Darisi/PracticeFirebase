@@ -1,0 +1,136 @@
+.outer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  
+  .Body {
+    width: 100%;
+    height: 80%;
+    display: flex;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+  
+  .contact {
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+  }
+  
+  .Details {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Heading {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+  }
+  
+  .Inputs {
+    width: 50%;
+    display: flex; 
+    align-items: center;
+  }
+  
+  .Inputs-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .italic {
+    font-style: italic;
+    color: grey;
+  }
+  
+  .Main {
+    width: 50%;
+    height: 30%;
+  }
+  
+  .Name, .Email {
+    all:unset;
+    width: 45.1%;
+    height: 10%;
+    padding: 10px;
+    border: 1px solid grey;
+  }
+  
+  .message {
+    margin-top: 10px;
+  }
+  
+  .Message {
+    all:unset;
+    width: 95.2%;
+    height: 10%;
+    padding: 10px;
+    border: 1px solid grey;
+  }
+  
+  .personalDetails {
+    display: flex;
+    gap: 0px 20px;
+  }
+  
+  .Send {
+    /* all: unset; */
+    border-style: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 30px;
+  }
+  
+  @media screen and (max-width:768px) {
+    .Main {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width:1024px) and (min-width:768px) {
+    .Main {
+      width: 75%;
+    }
+  }
+  
+  @media screen and (max-width:425px) {
+    .Body {
+      flex-direction: column;
+    }
+    .Details {
+      margin-top: 20px;
+      width: 100%;
+    }
+    .Inputs {
+      width: 100%;
+    }
+    .personalDetails {
+      flex-direction: column;
+    }
+    .Name, .Email {
+      width: 95.2%;
+    }
+    .Email {
+      margin-top: 10px;
+    }
+    .button {
+      justify-content:center;
+    }
+    .Heading {
+      width: 100%;
+    }
+  }

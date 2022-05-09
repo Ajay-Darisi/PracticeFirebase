@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Contact from './components/Contact.js';
+// import Firebase from "./components/Firebase.js";
+import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav.js";
+import Home from "./components/Home.js";
+import Card from "./components/Card.js";
+import Error from "./components/Error.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/card" element={<Card/>} />
+        <Route path="*" element={Error} />
+      </Routes>
+      {/* <Contact /> */}
+      {/* <Firebase /> */}
     </div>
   );
 }
