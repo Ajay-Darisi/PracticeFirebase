@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Signout from './Signout.js'
 
 export class Nav extends Component {
   render() {
@@ -7,8 +8,7 @@ export class Nav extends Component {
       <div>
           <li><Link to="home">Home</Link></li>
           <li><Link to="contact">Contact</Link></li>
-          <li><Link to="signup">Signup</Link></li>
-          <li><Link to="login">Login</Link></li>
+          <Signout />
       </div>
     )
   }

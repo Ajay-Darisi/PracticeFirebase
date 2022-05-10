@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-// import {Link} from 'react-router-dom';
 import db from './firebase.js';
 import { collection, getDocs } from "firebase/firestore";
 import '../styles/home.css';
 import { useNavigate } from "react-router-dom";
+import Nav from '../components/Nav.js'
 
 export default function Home() {
     let navigate = useNavigate();
@@ -23,6 +23,8 @@ export default function Home() {
         navigate("/card",{state : l});
       }
   return (
+    <>
+      <Nav />
     <div className="home">
           <div className="cards">
             {data.map((l) => (
@@ -36,5 +38,6 @@ export default function Home() {
             ))}
         </div>
       </div>
+    </>
   )
 }

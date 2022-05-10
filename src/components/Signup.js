@@ -1,5 +1,6 @@
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
+import {Link} from 'react-router-dom';
 
 const auth = getAuth();
 
@@ -27,6 +28,7 @@ function Signup() {
     return(
         <>
             <div className="Credentials">
+                Signup Page
                 <div className="username">
                    Email: <input type="email" className="Email" onChange={(e)=>setEmail(e.target.value)} value={email} />
                 </div>
@@ -36,6 +38,7 @@ function Signup() {
                 <div className="submit">
                     <button className="button" onClick={Authenticate} >Submit</button>
                 </div>
+              <li><Link to="/">Login</Link></li>
             </div>
         </>
     );
